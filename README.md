@@ -1,2 +1,7 @@
 # BrazilianEngines
-Pack of brazilian rocket engines for KSP RP-1
+Pack de motores a propelente líquido reais (e fictícios produzidos por mim) do programa espacial brasileiro
+
+DEPENDENCIAS:
+> ROEngines
+> Real Solar System
+> Realism Overhaul
