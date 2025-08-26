@@ -44,9 +44,6 @@ Quer ajudar a tornar o BrazilianEngines ainda melhor? A comunidade é bem-vinda 
 ## Homenagem
 Este mod é dedicado aos 21 heróis de Alcântara, cujas vidas foram perdidas em prol do avanço do programa espacial brasileiro. Seu sacrifício inspira este projeto e nossa missão de celebrar a exploração espacial do Brasil.
 
-## Licença
-Este mod é distribuído sob a licença [INSIRA LICENÇA, ex.: MIT, CC BY-NC-SA 4.0]. Consulte o arquivo `LICENSE` para detalhes.
-
 ## Agradecimentos
 Agradecemos à comunidade do KSP, aos desenvolvedores do *Realism Overhaul* e à equipe do *ROEngines* pelos recursos que tornaram este mod possível.
 
