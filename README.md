@@ -47,4 +47,4 @@ Este mod é dedicado aos 21 heróis de Alcântara, cujas vidas foram perdidas em
 ## Agradecimentos
 Agradecemos à comunidade do KSP, aos desenvolvedores do *Realism Overhaul* e à equipe do *ROEngines* pelos recursos que tornaram este mod possível.
 
-— Equipe Cross-Space
+— Equipe Cross Space
