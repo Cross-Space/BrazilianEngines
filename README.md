@@ -47,4 +47,17 @@ Este mod é dedicado aos 21 heróis de Alcântara, cujas vidas foram perdidas em
 ## Agradecimentos
 Agradecemos à comunidade do KSP, aos desenvolvedores do *Realism Overhaul* e à equipe do *ROEngines* pelos recursos que tornaram este mod possível.
 
+## Imagens
+
+<img width="1440" height="900" alt="screenshot427" src="https://github.com/user-attachments/assets/2ff27c77-7882-4063-ba7e-fdf8df7f422e" />
+<img width="1440" height="900" alt="sc<img width="1440" height="900" alt="screenshot407" src="https://github.com/user-attachments/assets/11d1b0c2-c5a0-4066-a175-6fb5654a652c" />
+<img width="1440" height="900" alt="screenshot406" src="https://github.com/user-attachments/assets/f0efbc80-39e8-4e5b-ba2f-b9ffaeced975" />
+<img width="1440" height="900" alt="screenshot392" src="https://github.com/user-attachments/assets/0f4a0a93-671b-4a6c-9a65-a66a6b95996f" />
+<img width="1440" height="900" alt="screenshot362" src="https://github.com/user-attachments/assets/c25209ef-1cf9-4440-a267-5e44faf6ca18" />
+<img width="1440" height="900" alt="screenshot330" src="https://github.com/user-attachments/assets/438e9b04-c64b-45a7-b82d-045db088b070" />
+<img width="1440" height="900" alt="screenshot431" src="https://github.com/user-attachments/assets/ef96220c-0e50-469b-a1f7-b39c96960a4e" />
+reenshot421" src="https://github.com/user-attachments/assets/f9c00896-df3f-4166-9303-9be311c11509" />
+<img width="1440" height="900" alt="screenshot428" src="https://github.com/user-attachments/assets/945a52e8-0c7b-4e4a-9c2f-5b54f95b59ba" />
+
+
 — Equipe Cross Space
