@@ -1,0 +1,46 @@
+```plaintext
+Proposed changes (preliminar)
+
+Este arquivo contém sugestões de mudanças que podem ser aplicadas após revisão.
+Os valores numéricos estão marcados com placeholders <<...>> e devem ser substituídos
+após confirmação das fontes.
+
+1) `L15` (GameData/BrazilianEngines/Engines/Liquid/L15_L25/L15.cfg)
+- Atualizar descrição para explicar LOX + Etanol e indicar que `L15E` é variante com bomba elétrica.
+- Exemplo de descrição sugerida:
+  "Motor L-15 — LOX + Etanol. Variante L15E: mesma câmara com bomba elétrica. Propostos: Isp_sl=<<Isp_sl>>, Isp_vac=<<Isp_vac>>. Fonte: RESEARCH_REPORT.md"
+- Verificar valores de `maxTemp`/`skinTemp` e `cost` após revisão.
+
+2) `L75` (GameData/BrazilianEngines/Engines/Liquid/L75/L75.cfg)
+- Atualizar descrição para LOX+RP-1 e adicionar `ModuleEngineIgnitionReliability` com valores iniciais
+  sugeridos (ex.: ignitionReliabilityStart=0.93, ignitionReliabilityEnd=0.99).
+
+3) `L75-H` (GameData/BrazilianEngines/Engines/Liquid/L75-H/L75-H.cfg)
+- Marcar claramente como variante Hydrolox e adicionar reliability module. Indicar Isp_vac placeholder.
+
+4) Sériess SRM (S20, S23, S30, S33, S40, S43, S43B, S44, S50)
+- Atualizar descrições para citar valores preliminares (onde encontrados) e adicionar
+  `ModuleEngineIgnitionReliability` com parâmetros conservadores (ex.: start 0.88–0.90).
+
+5) Observações gerais
+- Não aplicar mudanças em `thrustCurve` ou em `ModuleEngineConfigs` ainda — aguardar confirmação
+  dos valores na tabela CSV (`GameData/BrazilianEngines/research_table_prelim.csv`).
+- Após aprovação, será gerado um patch detalhado que altera apenas as linhas numéricas
+  (Isp, thrust, mass, burn time) e `entryCost`/`TechRequired` quando justificado.
+
+Placeholder examples (para aplicar rapidamente, substituir os tokens):
+
+MODULE
+{
+    name = ModuleEngineIgnitionReliability
+    ignitionReliabilityStart = 0.90
+    ignitionReliabilityEnd = 0.98
+    cycleReliabilityStart = 0.88
+    cycleReliabilityEnd = 0.995
+}
+
+Next steps (recomendado):
+1. Você confirma os placeholders (ou pede que eu finalize a extração automatizada dos `/tmp/*.html`).
+2. Eu gero `proposed_changes.patch` aplicável com as edições numéricas e faço um teste sintático.
+
+```

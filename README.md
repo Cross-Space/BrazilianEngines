@@ -35,6 +35,9 @@ Este é um projeto em desenvolvimento. Algumas limitações da versão 1.0 inclu
 
 Estamos trabalhando para melhorar o mod com modelos 3D próprios, integração completa com o *RP-1* e descrições mais precisas.
 
+## Nota sobre artefatos de pesquisa
+Arquivos auxiliares gerados durante a fase de pesquisa (relatórios temporários, notas e patches de resumo) foram removidos para manter o repositório enxuto. Se precisar regenerar esses artefatos ou revisar os dados brutos usados para calibração (Isp, empuxo, tempos de queima), entre em contato ou abra uma *issue* — posso regenerar os relatórios e o patch proposto à parte.
+
 ## Como Contribuir
 Quer ajudar a tornar o BrazilianEngines ainda melhor? A comunidade é bem-vinda para:
 - Reportar bugs ou sugerir melhorias na aba [Issues](https://github.com/Cross-Space/BrazilianEngines/issues).
