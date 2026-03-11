@@ -1,0 +1,26 @@
+@PART[*]:HAS[@MODULE[ModuleEngineConfigs]:HAS[@CONFIG[N90]],!MODULE[TestFlightInterop]]:BEFORE[zTestFlight]
+{
+    TESTFLIGHT
+    {
+        name = N90
+        testedBurnTime = 90 // Margem de segurança ajustada
+        ratedBurnTime = 80 // Tempo de queima estimado (aplicado do VLS source)
+        safeOverburn = true
+
+        ignitionReliabilityStart = 0.850000
+        ignitionReliabilityEnd = 0.990000
+
+        cycleReliabilityStart = 0.900000
+        cycleReliabilityEnd = 0.990000
+
+        reliabilityDataRateMultiplier = 1
+    }
+    @MODULE[ModuleEngineConfigs]
+    {
+        @CONFIG[N90a]
+        {
+            %ratedBurnTime = #$/TESTFLIGHT[N90a]/ratedBurnTime$
+        }
+    }
+
+}
