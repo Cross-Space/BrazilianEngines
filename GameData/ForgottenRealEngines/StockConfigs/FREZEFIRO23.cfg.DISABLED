@@ -1,0 +1,130 @@
+PART http://spaceflight101.com/spacerockets/vega/ http://www.avio.com/files/catalog/pdf/motore_p80_75.pdf
+{
+	//RSSROConfig = True
+	
+	MODEL
+	{
+		model = ForgottenRealEngines/Assets/VegaSRM/Zefiro23
+	}
+	
+	name = FREZEFIRO23
+	module = Part
+	author = Zarbizaure
+	rescaleFactor = 0.658
+	node_stack_top = 0.0, 3.4, 0.0, 0.0, 1.0, 0.0
+	node_stack_bottom = 0.0, -4.25, 0.0, 0.0, -1.0, 0.0
+	node_attach = 1, 0.0, 0.0, 1.0, 0.0, 0.0, 1
+	attachRules = 1,1,1,1,0
+	
+	TechRequired = heavierRocketry
+	cost = 100
+	entrycost = 10000
+	mass = 0.83
+	skinInternalConductionMult = 4.0
+	emissiveConstant = 0.8 // engine nozzles are good at radiating.
+	dragModelType = default
+	maximum_drag = 0.2
+	minimum_drag = 0.2
+	angularDrag = 2
+	crashTolerance = 20
+	maxTemp = 2000 // = 3600
+	category = Engine
+	subcategory = 0
+	stagingIcon = SOLID_BOOSTER
+	
+	title = Zefiro 23
+	bulkheadProfiles = size2
+	manufacturer = Avio
+	description = The Zephiro 23 is an high performance upper stage solid rocket motor. It powers Vega's second stage. Burn time ~77s. [1.25m]
+    tags = ForgottenRealEngines
+
+	MODULE
+	{
+		name = ModuleEngines
+		thrustVectorTransformName = thrustTransform
+		throttleLocked = True
+		exhaustDamage = True
+		ignitionThreshold = 0.1
+		minThrust = 0
+		maxThrust = 250
+		heatProduction = 550
+		useEngineResponseTime = True
+		engineAccelerationSpeed = 10.0
+		allowShutdown = False
+		fxOffset = 0, 0, 0.12
+		
+		// Possible EngineType values:
+		// Generic, SolidBooster, LiquidFuel, Piston, Turbine, ScramJet, Electric, Nuclear, MonoProp
+		EngineType = SolidBooster
+		exhaustDamageDistanceOffset = 0.6
+		
+		PROPELLANT
+		{
+			name = SolidFuel
+			ratio = 1.0
+			DrawGauge = True
+		}
+		atmosphereCurve
+		{
+			key = 0 270
+			key = 1 210
+			key = 7 0.001
+		}
+	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 580
+		maxAmount = 580
+	}
+	MODULE	
+	{
+		name = FXModuleLookAtConstraint
+		CONSTRAINLOOKFX
+		{
+			targetName = Base1
+			rotatorsName = Piston1
+		}
+		CONSTRAINLOOKFX
+		{
+			targetName = Base2
+			rotatorsName = Piston2
+		}
+		name = FXModuleLookAtConstraint
+		CONSTRAINLOOKFX
+		{
+			targetName = Attach1
+			rotatorsName = Piston3
+		}
+		CONSTRAINLOOKFX
+		{
+			targetName = Attach2
+			rotatorsName = Piston4
+		}
+	}
+	MODULE
+	{
+		name = FXModuleAnimateThrottle
+		animationName = Zefiro23Heat
+		responseSpeed = 0.005
+		dependOnEngineState = False
+		dependOnThrottle = True
+	}
+	MODULE
+	{
+		name = ModuleGimbal
+		gimbalTransformName = thrustTransform
+		gimbalRange = 7
+		useGimbalResponseSpeed = true
+		gimbalResponseSpeed = 16		
+	}
+	MODULE
+	{
+		name = ModuleSurfaceFX
+		thrustProviderModuleIndex = 0
+		fxMax = 0.8
+		maxDistance = 50
+		falloff = 1.8
+		thrustTransformName = thrustTransform
+	}
+}

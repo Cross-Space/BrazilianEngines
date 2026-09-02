@@ -1,0 +1,128 @@
+// Brazilian Engines - TestFlight integration for RSS/RO/RP-1
+// v0.2 strict-realism pass: burn times are per-engine, not blanket 420 s.
+// Values marked as estimated are placeholders until full public burn-duration data is available.
+
+// -----------------------------
+// Solid motors
+// -----------------------------
+
+@PART[BRA-S20]:HAS[@MODULE[ModuleEngineConfigs],!MODULE[TestFlightInterop]]:BEFORE[zTestFlight]
+{
+    TESTFLIGHT { name = S20 ratedBurnTime = 18 dynamicPressureMax = -1 safeOverburn = true ignitionReliabilityStart = 0.90 ignitionReliabilityEnd = 0.98 cycleReliabilityStart = 0.80 cycleReliabilityEnd = 0.97 }
+    TESTFLIGHT { name = S21 ratedBurnTime = 16 dynamicPressureMax = -1 safeOverburn = true ignitionReliabilityStart = 0.90 ignitionReliabilityEnd = 0.98 cycleReliabilityStart = 0.80 cycleReliabilityEnd = 0.97 techTransfer = S20:70 }
+    TESTFLIGHT { name = S22 ratedBurnTime = 15 dynamicPressureMax = -1 safeOverburn = true ignitionReliabilityStart = 0.90 ignitionReliabilityEnd = 0.98 cycleReliabilityStart = 0.80 cycleReliabilityEnd = 0.97 techTransfer = S21:70 }
+}
+
+@PART[BRA-S23]:HAS[@MODULE[ModuleEngineConfigs],!MODULE[TestFlightInterop]]:BEFORE[zTestFlight]
+{
+    TESTFLIGHT { name = S23 ratedBurnTime = 20 dynamicPressureMax = -1 safeOverburn = true ignitionReliabilityStart = 0.90 ignitionReliabilityEnd = 0.98 cycleReliabilityStart = 0.80 cycleReliabilityEnd = 0.97 techTransfer = S20:60 }
+    TESTFLIGHT { name = S24 ratedBurnTime = 18 dynamicPressureMax = -1 safeOverburn = true ignitionReliabilityStart = 0.90 ignitionReliabilityEnd = 0.98 cycleReliabilityStart = 0.80 cycleReliabilityEnd = 0.97 techTransfer = S23:70 }
+    TESTFLIGHT { name = S25 ratedBurnTime = 17 dynamicPressureMax = -1 safeOverburn = true ignitionReliabilityStart = 0.90 ignitionReliabilityEnd = 0.98 cycleReliabilityStart = 0.80 cycleReliabilityEnd = 0.97 techTransfer = S24:70 }
+}
+
+@PART[BRA-S30]:HAS[@MODULE[ModuleEngineConfigs],!MODULE[TestFlightInterop]]:BEFORE[zTestFlight]
+{
+    TESTFLIGHT { name = S30 ratedBurnTime = 20 dynamicPressureMax = -1 safeOverburn = true ignitionReliabilityStart = 0.90 ignitionReliabilityEnd = 0.98 cycleReliabilityStart = 0.80 cycleReliabilityEnd = 0.97 techTransfer = S20:20 }
+    TESTFLIGHT { name = S32 ratedBurnTime = 18 dynamicPressureMax = -1 safeOverburn = true ignitionReliabilityStart = 0.90 ignitionReliabilityEnd = 0.98 cycleReliabilityStart = 0.80 cycleReliabilityEnd = 0.97 techTransfer = S30:60 }
+}
+
+@PART[BRA-S31]:HAS[@MODULE[ModuleEngineConfigs],!MODULE[TestFlightInterop]]:BEFORE[zTestFlight]
+{
+    TESTFLIGHT { name = S31 ratedBurnTime = 14 dynamicPressureMax = -1 safeOverburn = true ignitionReliabilityStart = 0.90 ignitionReliabilityEnd = 0.98 cycleReliabilityStart = 0.80 cycleReliabilityEnd = 0.97 techTransfer = S30:50 }
+}
+
+@PART[BRA-S33]:HAS[@MODULE[ModuleEngineConfigs],!MODULE[TestFlightInterop]]:BEFORE[zTestFlight]
+{
+    TESTFLIGHT { name = S33 ratedBurnTime = 29 dynamicPressureMax = -1 safeOverburn = true ignitionReliabilityStart = 0.88 ignitionReliabilityEnd = 0.97 cycleReliabilityStart = 0.78 cycleReliabilityEnd = 0.96 techTransfer = S30:40 }
+    TESTFLIGHT { name = S34 ratedBurnTime = 26 dynamicPressureMax = -1 safeOverburn = true ignitionReliabilityStart = 0.88 ignitionReliabilityEnd = 0.97 cycleReliabilityStart = 0.78 cycleReliabilityEnd = 0.96 techTransfer = S33:70 }
+    TESTFLIGHT { name = S35 ratedBurnTime = 24 dynamicPressureMax = -1 safeOverburn = true ignitionReliabilityStart = 0.88 ignitionReliabilityEnd = 0.97 cycleReliabilityStart = 0.78 cycleReliabilityEnd = 0.96 techTransfer = S34:70 }
+}
+
+@PART[BRA-S40]:HAS[@MODULE[ModuleEngineConfigs],!MODULE[TestFlightInterop]]:BEFORE[zTestFlight]
+{
+    TESTFLIGHT { name = S40 ratedBurnTime = 56 dynamicPressureMax = -1 safeOverburn = true ignitionReliabilityStart = 0.88 ignitionReliabilityEnd = 0.97 cycleReliabilityStart = 0.78 cycleReliabilityEnd = 0.96 techTransfer = S30:20 }
+    TESTFLIGHT { name = S40-A ratedBurnTime = 52 dynamicPressureMax = -1 safeOverburn = true ignitionReliabilityStart = 0.88 ignitionReliabilityEnd = 0.97 cycleReliabilityStart = 0.78 cycleReliabilityEnd = 0.96 techTransfer = S40:70 }
+    TESTFLIGHT { name = S40-B ratedBurnTime = 50 dynamicPressureMax = -1 safeOverburn = true ignitionReliabilityStart = 0.88 ignitionReliabilityEnd = 0.97 cycleReliabilityStart = 0.78 cycleReliabilityEnd = 0.96 techTransfer = S40-A:70 }
+}
+
+@PART[BRA-S43]:HAS[@MODULE[ModuleEngineConfigs],!MODULE[TestFlightInterop]]:BEFORE[zTestFlight]
+{
+    TESTFLIGHT { name = S43 ratedBurnTime = 60 dynamicPressureMax = -1 safeOverburn = true ignitionReliabilityStart = 0.88 ignitionReliabilityEnd = 0.97 cycleReliabilityStart = 0.78 cycleReliabilityEnd = 0.96 techTransfer = S40:30 }
+    TESTFLIGHT { name = S43TM ratedBurnTime = 58 dynamicPressureMax = -1 safeOverburn = true ignitionReliabilityStart = 0.88 ignitionReliabilityEnd = 0.97 cycleReliabilityStart = 0.78 cycleReliabilityEnd = 0.96 techTransfer = S43:70 }
+}
+
+@PART[BRA-S43B]:HAS[@MODULE[ModuleEngineConfigs],!MODULE[TestFlightInterop]]:BEFORE[zTestFlight]
+{
+    TESTFLIGHT { name = S43B ratedBurnTime = 59 dynamicPressureMax = -1 safeOverburn = true ignitionReliabilityStart = 0.88 ignitionReliabilityEnd = 0.97 cycleReliabilityStart = 0.78 cycleReliabilityEnd = 0.96 techTransfer = S43:80 }
+    TESTFLIGHT { name = S43TM-B ratedBurnTime = 58 dynamicPressureMax = -1 safeOverburn = true ignitionReliabilityStart = 0.88 ignitionReliabilityEnd = 0.97 cycleReliabilityStart = 0.78 cycleReliabilityEnd = 0.96 techTransfer = S43TM:80 }
+}
+
+@PART[BRA-S44]:HAS[@MODULE[ModuleEngineConfigs],!MODULE[TestFlightInterop]]:BEFORE[zTestFlight]
+{
+    TESTFLIGHT { name = S44 ratedBurnTime = 68 dynamicPressureMax = -1 safeOverburn = true ignitionReliabilityStart = 0.88 ignitionReliabilityEnd = 0.97 cycleReliabilityStart = 0.78 cycleReliabilityEnd = 0.96 techTransfer = S40:20 }
+}
+
+@PART[BRA-S50]:HAS[@MODULE[ModuleEngineConfigs],!MODULE[TestFlightInterop]]:BEFORE[zTestFlight]
+{
+    TESTFLIGHT { name = S50 ratedBurnTime = 84 dynamicPressureMax = -1 safeOverburn = true ignitionReliabilityStart = 0.86 ignitionReliabilityEnd = 0.96 cycleReliabilityStart = 0.76 cycleReliabilityEnd = 0.95 techTransfer = S43TM:20 }
+    TESTFLIGHT { name = S50 Vacuum ratedBurnTime = 87 dynamicPressureMax = -1 safeOverburn = true ignitionReliabilityStart = 0.86 ignitionReliabilityEnd = 0.96 cycleReliabilityStart = 0.76 cycleReliabilityEnd = 0.95 techTransfer = S50:80 }
+}
+
+// -----------------------------
+// Liquid motors
+// -----------------------------
+
+@PART[BRA-L5]:HAS[@MODULE[ModuleEngineConfigs],!MODULE[TestFlightInterop]]:BEFORE[zTestFlight]
+{
+    TESTFLIGHT { name = L5-E ratedBurnTime = 90 safeOverburn = true ignitionReliabilityStart = 0.84 ignitionReliabilityEnd = 0.96 cycleReliabilityStart = 0.80 cycleReliabilityEnd = 0.95 }
+}
+
+@PART[BRA-L5K]:HAS[@MODULE[ModuleEngineConfigs],!MODULE[TestFlightInterop]]:BEFORE[zTestFlight]
+{
+    TESTFLIGHT { name = L5-K ratedBurnTime = 90 safeOverburn = true ignitionReliabilityStart = 0.84 ignitionReliabilityEnd = 0.96 cycleReliabilityStart = 0.80 cycleReliabilityEnd = 0.95 techTransfer = L5-E:50 }
+}
+
+@PART[BRA-L15]:HAS[@MODULE[ModuleEngineConfigs],!MODULE[TestFlightInterop]]:BEFORE[zTestFlight]
+{
+    TESTFLIGHT { name = L15 A ratedBurnTime = 120 safeOverburn = true ignitionReliabilityStart = 0.84 ignitionReliabilityEnd = 0.96 cycleReliabilityStart = 0.80 cycleReliabilityEnd = 0.95 techTransfer = L5-E:40 }
+    TESTFLIGHT { name = L15-Dev ratedBurnTime = 120 safeOverburn = true ignitionReliabilityStart = 0.84 ignitionReliabilityEnd = 0.96 cycleReliabilityStart = 0.80 cycleReliabilityEnd = 0.95 techTransfer = L15 A:70 }
+}
+
+@PART[BRA-L25]:HAS[@MODULE[ModuleEngineConfigs],!MODULE[TestFlightInterop]]:BEFORE[zTestFlight]
+{
+    TESTFLIGHT { name = L25 ratedBurnTime = 500 safeOverburn = true ignitionReliabilityStart = 0.80 ignitionReliabilityEnd = 0.95 cycleReliabilityStart = 0.78 cycleReliabilityEnd = 0.94 techTransfer = L15 A:50 }
+    TESTFLIGHT { name = L25-Dev ratedBurnTime = 500 safeOverburn = true ignitionReliabilityStart = 0.80 ignitionReliabilityEnd = 0.95 cycleReliabilityStart = 0.78 cycleReliabilityEnd = 0.94 techTransfer = L25:70 }
+}
+
+@PART[BRA-L75]:HAS[@MODULE[ModuleEngineConfigs],!MODULE[TestFlightInterop]]:BEFORE[zTestFlight]
+{
+    TESTFLIGHT { name = L75-K ratedBurnTime = 420 safeOverburn = true ignitionReliabilityStart = 0.78 ignitionReliabilityEnd = 0.94 cycleReliabilityStart = 0.75 cycleReliabilityEnd = 0.93 techTransfer = L25:20 }
+}
+
+@PART[BRA-L75E]:HAS[@MODULE[ModuleEngineConfigs],!MODULE[TestFlightInterop]]:BEFORE[zTestFlight]
+{
+    TESTFLIGHT { name = L75-E ratedBurnTime = 420 safeOverburn = true ignitionReliabilityStart = 0.78 ignitionReliabilityEnd = 0.94 cycleReliabilityStart = 0.75 cycleReliabilityEnd = 0.93 techTransfer = L75-K:50 }
+    TESTFLIGHT { name = L75-E-Dev ratedBurnTime = 420 safeOverburn = true ignitionReliabilityStart = 0.78 ignitionReliabilityEnd = 0.94 cycleReliabilityStart = 0.75 cycleReliabilityEnd = 0.93 techTransfer = L75-E:70 }
+}
+
+@PART[BRA-Arion]:HAS[@MODULE[ModuleEngineConfigs],!MODULE[TestFlightInterop]]:BEFORE[zTestFlight]
+{
+    TESTFLIGHT { name = Arion-1 ratedBurnTime = 100 safeOverburn = true ignitionReliabilityStart = 0.75 ignitionReliabilityEnd = 0.92 cycleReliabilityStart = 0.72 cycleReliabilityEnd = 0.90 }
+}
+
+// -----------------------------
+// Provisional private solid motors
+// -----------------------------
+
+@PART[*]:HAS[@MODULE[ModuleEngineConfigs]:HAS[@CONFIG[N04]],!MODULE[TestFlightInterop]]:BEFORE[zTestFlight]
+{
+    TESTFLIGHT { name = N04 ratedBurnTime = 85 safeOverburn = true ignitionReliabilityStart = 0.78 ignitionReliabilityEnd = 0.94 cycleReliabilityStart = 0.75 cycleReliabilityEnd = 0.92 }
+}
+@PART[*]:HAS[@MODULE[ModuleEngineConfigs]:HAS[@CONFIG[N09]],!MODULE[TestFlightInterop]]:BEFORE[zTestFlight]
+{
+    TESTFLIGHT { name = N09 ratedBurnTime = 76 safeOverburn = true ignitionReliabilityStart = 0.78 ignitionReliabilityEnd = 0.94 cycleReliabilityStart = 0.75 cycleReliabilityEnd = 0.92 }
+}
+@PART[*]:HAS[@MODULE[ModuleEngineConfigs]:HAS[@CONFIG[N90a]],!MODULE[TestFlightInterop]]:BEFORE[zTestFlight]
+{
+    TESTFLIGHT { name = N90a ratedBurnTime = 93 safeOverburn = true ignitionReliabilityStart = 0.76 ignitionReliabilityEnd = 0.93 cycleReliabilityStart = 0.73 cycleReliabilityEnd = 0.91 techTransfer = S40:20 }
+}
