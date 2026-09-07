@@ -1,0 +1,18 @@
+Brazilian Engines - Planned content
+===================================
+
+The following IDs are reserved for future part implementations and are not
+loaded by the active ModuleManager configuration:
+
+- BRA-S43B
+- BRA-L5
+- BRA-L5K
+- BRA-L15
+- BRA-L25
+- BRA-L75
+- BRA-L75E
+- BRA-L75-H (experimental hydrogen variant)
+
+Before reintroducing patches for these IDs, provide a complete PART definition,
+model, engine configurations, tech tree entry, entry cost, TestFlight data and
+Waterfall assignment. Do not restore individual patches in isolation.
