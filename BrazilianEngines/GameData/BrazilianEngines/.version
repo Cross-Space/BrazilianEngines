@@ -1,0 +1,30 @@
+{
+  "NAME": "BrazilianEngines",
+  "URL": "https://github.com/Cross-Space/BrazilianEngines",
+  "DOWNLOAD": "https://github.com/Cross-Space/BrazilianEngines/releases/latest",
+  "GITHUB": {
+    "USERNAME": "Cross-Space",
+    "REPOSITORY": "BrazilianEngines",
+    "ALLOW_PRE_RELEASE": false
+  },
+  "VERSION": {
+    "MAJOR": 1,
+    "MINOR": 2,
+    "PATCH": 0,
+    "BUILD": 0
+  },
+  "KSP_VERSION": {
+    "MAJOR": 1,
+    "MINOR": 12,
+    "PATCH": 0
+  },
+  "KSP_VERSION_MIN": {
+    "MAJOR": 1,
+    "MINOR": 8,
+    "PATCH": 0
+  },
+  "AUTHOR": "Cross Space",
+  "LICENSE": "MIT",
+  "RELEASE_IS_CREATE": true,
+  "CHANGELOG_URL": "https://github.com/Cross-Space/BrazilianEngines/blob/main/CHANGELOG.md"
+}
