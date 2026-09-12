@@ -1,10 +1,19 @@
 Brazilian Engines - Planned content
 ===================================
 
+Implemented and documented (moved out of the reserved list below):
+- BRA-S43B (S43 Booster) - finalized, tech/cost patch in TechTreeUnified.cfg
+- BRA-S43C (S43 Core) - finalized, tech/cost patch in TechTreeUnified.cfg
+- BRA-S40TM (S40TM Series) - finalized, tech/cost patch in TechTreeUnified.cfg
+- BRA-S50SL / BRA-S50Vac - finalized; previous patch mistakenly targeted a
+  nonexistent "BRA-S50", fixed to target the real part names
+- BRA-Arion_Early / BRA-Arion_Mid / BRA-Arion_Advanced - finalized with
+  provisional tech placement (reusing orbitalRocketry2009); revisit once the
+  live RP-1 tech tree is checked for dedicated liquid-engine-family nodes
+
 The following IDs are reserved for future part implementations and are not
 loaded by the active ModuleManager configuration:
 
-- BRA-S43B
 - BRA-L5
 - BRA-L5K
 - BRA-L15
