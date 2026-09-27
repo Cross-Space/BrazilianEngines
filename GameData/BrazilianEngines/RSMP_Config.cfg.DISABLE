@@ -1,0 +1,16 @@
+@PART[BRA-S10-1|BRA-S10-2|BRA-S20|BRA-S23|BRA-S30|BRA-31|BRA-S33|BRA-S40|BRA-S40TM|BRA-S43|BRA-S43B|BRA-S43C|BRA-S44|BRA-S50SL|BRA-S50Vac]:NEEDS[SmokeScreen,Bluedog_DB]:FINAL
+{   
+    %PLUME
+    {
+        name = Solid-Lower
+        transformName = thrustTransform
+        @localPosition = 0,0,2
+        energy = 1
+        speed = 1
+    }
+    //@MODULE[ModuleEngines*]
+    //{
+        //%powerEffectName = Solid-Lower
+        //!runningEffectName = DELETE
+    //}
+}
